@@ -1,0 +1,882 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_a68399962e19bc3b9ba59e89d4918c77 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_a68399962e19bc3b9ba59e89d4918c77" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_a68399962e19bc3b9ba59e89d4918c77 = L.map(
+                "map_a68399962e19bc3b9ba59e89d4918c77",
+                {
+                    center: [0.0, 0.0],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 2,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_d19c32dfdb08da52779b7c65f21a3d0a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_d19c32dfdb08da52779b7c65f21a3d0a.addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var marker_e444e07d45fdc091ea228c6da7c3d5b4 = L.marker(
+                [7.8804, 98.3923],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_16f0ed96130c918b44eca744e56d66cc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_e444e07d45fdc091ea228c6da7c3d5b4.setIcon(icon_16f0ed96130c918b44eca744e56d66cc);
+        
+    
+        var popup_0861a1698a1daba9df8f0c12d7b715f4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b91ec4b6689e0bb4103719eff9c1b95c = $(`<div id="html_b91ec4b6689e0bb4103719eff9c1b95c" style="width: 100.0%; height: 100.0%;">Phuket, Tajlandia</div>`)[0];
+                popup_0861a1698a1daba9df8f0c12d7b715f4.setContent(html_b91ec4b6689e0bb4103719eff9c1b95c);
+            
+        
+
+        marker_e444e07d45fdc091ea228c6da7c3d5b4.bindPopup(popup_0861a1698a1daba9df8f0c12d7b715f4)
+        ;
+
+        
+    
+    
+            var marker_2a9383bcd9f5365b9e8b8485d34ce493 = L.marker(
+                [9.512, 100.0134],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_a07da2d296e63e0492ef5551406424ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2a9383bcd9f5365b9e8b8485d34ce493.setIcon(icon_a07da2d296e63e0492ef5551406424ef);
+        
+    
+        var popup_052188cac8d2fee8122666256499791d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_e807417390ffb4738b711d628dee8640 = $(`<div id="html_e807417390ffb4738b711d628dee8640" style="width: 100.0%; height: 100.0%;">Koh Samui, Tajlandia</div>`)[0];
+                popup_052188cac8d2fee8122666256499791d.setContent(html_e807417390ffb4738b711d628dee8640);
+            
+        
+
+        marker_2a9383bcd9f5365b9e8b8485d34ce493.bindPopup(popup_052188cac8d2fee8122666256499791d)
+        ;
+
+        
+    
+    
+            var marker_76e346660ecc1d6c58e12868a94ef87d = L.marker(
+                [13.7563, 100.5018],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_81c46f4d71c2d835155e4b8887413d94 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_76e346660ecc1d6c58e12868a94ef87d.setIcon(icon_81c46f4d71c2d835155e4b8887413d94);
+        
+    
+        var popup_3d4699ea6e1b3718ea80cb33a51655e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ae789536b8c9657aee3ea34ca2f96f6b = $(`<div id="html_ae789536b8c9657aee3ea34ca2f96f6b" style="width: 100.0%; height: 100.0%;">Bangkok, Tajlandia</div>`)[0];
+                popup_3d4699ea6e1b3718ea80cb33a51655e2.setContent(html_ae789536b8c9657aee3ea34ca2f96f6b);
+            
+        
+
+        marker_76e346660ecc1d6c58e12868a94ef87d.bindPopup(popup_3d4699ea6e1b3718ea80cb33a51655e2)
+        ;
+
+        
+    
+    
+            var marker_113fe9694bedc34671f10d73ef21076f = L.marker(
+                [4.1755, 73.5093],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_cb62fc97f00ae8922ef6deecf5db8524 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_113fe9694bedc34671f10d73ef21076f.setIcon(icon_cb62fc97f00ae8922ef6deecf5db8524);
+        
+    
+        var popup_8bd6f51866de8b2f1e9cc2761cbd6d26 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f85a70646fced2314169d18ec97c788b = $(`<div id="html_f85a70646fced2314169d18ec97c788b" style="width: 100.0%; height: 100.0%;">Male, Malediwy</div>`)[0];
+                popup_8bd6f51866de8b2f1e9cc2761cbd6d26.setContent(html_f85a70646fced2314169d18ec97c788b);
+            
+        
+
+        marker_113fe9694bedc34671f10d73ef21076f.bindPopup(popup_8bd6f51866de8b2f1e9cc2761cbd6d26)
+        ;
+
+        
+    
+    
+            var marker_b4e9fcfad4121a58e925411a52ce1c09 = L.marker(
+                [6.0328, 80.217],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_a049e6c2f08e0dc719b9da022a2fefe6 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_b4e9fcfad4121a58e925411a52ce1c09.setIcon(icon_a049e6c2f08e0dc719b9da022a2fefe6);
+        
+    
+        var popup_0dd68a4493829ba3ed14421309210803 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_70460e74b9c61dce8da025afd37ff11b = $(`<div id="html_70460e74b9c61dce8da025afd37ff11b" style="width: 100.0%; height: 100.0%;">Galle, Sri Lanka</div>`)[0];
+                popup_0dd68a4493829ba3ed14421309210803.setContent(html_70460e74b9c61dce8da025afd37ff11b);
+            
+        
+
+        marker_b4e9fcfad4121a58e925411a52ce1c09.bindPopup(popup_0dd68a4493829ba3ed14421309210803)
+        ;
+
+        
+    
+    
+            var marker_cb63f8d9f7b5f746e06aaa32366ba287 = L.marker(
+                [5.9484, 80.459],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_2e8bb2c2c56e8f6cc52060d4a2dfc56b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_cb63f8d9f7b5f746e06aaa32366ba287.setIcon(icon_2e8bb2c2c56e8f6cc52060d4a2dfc56b);
+        
+    
+        var popup_5813a32b28e85b53441c0edb54e9b4b8 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8f8b0b6f67c2e1311c410696b235499a = $(`<div id="html_8f8b0b6f67c2e1311c410696b235499a" style="width: 100.0%; height: 100.0%;">Mirissa, Sri Lanka</div>`)[0];
+                popup_5813a32b28e85b53441c0edb54e9b4b8.setContent(html_8f8b0b6f67c2e1311c410696b235499a);
+            
+        
+
+        marker_cb63f8d9f7b5f746e06aaa32366ba287.bindPopup(popup_5813a32b28e85b53441c0edb54e9b4b8)
+        ;
+
+        
+    
+    
+            var marker_d5668eec432793a1c0c758d7fe9e54c5 = L.marker(
+                [21.1619, -86.8515],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_3b108d5bd1ab6e8ff4daaee02657f118 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_d5668eec432793a1c0c758d7fe9e54c5.setIcon(icon_3b108d5bd1ab6e8ff4daaee02657f118);
+        
+    
+        var popup_3bb6047a84399d24e3e923c0e121a562 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c62174dfede2aab045e7444af82a693c = $(`<div id="html_c62174dfede2aab045e7444af82a693c" style="width: 100.0%; height: 100.0%;">Cancun, Meksyk</div>`)[0];
+                popup_3bb6047a84399d24e3e923c0e121a562.setContent(html_c62174dfede2aab045e7444af82a693c);
+            
+        
+
+        marker_d5668eec432793a1c0c758d7fe9e54c5.bindPopup(popup_3bb6047a84399d24e3e923c0e121a562)
+        ;
+
+        
+    
+    
+            var marker_4335ccf797657071b7ba69afd2c11ece = L.marker(
+                [20.211, -87.4657],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_4287b23768599e28696c3ce32f476267 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_4335ccf797657071b7ba69afd2c11ece.setIcon(icon_4287b23768599e28696c3ce32f476267);
+        
+    
+        var popup_d2c83e18c663240e40aa8c5409db7481 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f19eb026c58666b838e7e4f2e2f570dc = $(`<div id="html_f19eb026c58666b838e7e4f2e2f570dc" style="width: 100.0%; height: 100.0%;">Tulum, Meksyk</div>`)[0];
+                popup_d2c83e18c663240e40aa8c5409db7481.setContent(html_f19eb026c58666b838e7e4f2e2f570dc);
+            
+        
+
+        marker_4335ccf797657071b7ba69afd2c11ece.bindPopup(popup_d2c83e18c663240e40aa8c5409db7481)
+        ;
+
+        
+    
+    
+            var marker_73494cdd14072fee29ef1802ed633bd9 = L.marker(
+                [23.1136, -82.3666],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_44b49f829b2e3cd4e6f9fcd190a477c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_73494cdd14072fee29ef1802ed633bd9.setIcon(icon_44b49f829b2e3cd4e6f9fcd190a477c9);
+        
+    
+        var popup_c2fb10b88d50518df4697973b748d037 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_1d258b8030e48483390169e01ffcf62a = $(`<div id="html_1d258b8030e48483390169e01ffcf62a" style="width: 100.0%; height: 100.0%;">Hawana, Kuba</div>`)[0];
+                popup_c2fb10b88d50518df4697973b748d037.setContent(html_1d258b8030e48483390169e01ffcf62a);
+            
+        
+
+        marker_73494cdd14072fee29ef1802ed633bd9.bindPopup(popup_c2fb10b88d50518df4697973b748d037)
+        ;
+
+        
+    
+    
+            var marker_bd8cf22f67ae76bbbdaf54e5f79c1088 = L.marker(
+                [23.1517, -81.2506],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_57bd096c2ef12271308db4ea51b1082d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_bd8cf22f67ae76bbbdaf54e5f79c1088.setIcon(icon_57bd096c2ef12271308db4ea51b1082d);
+        
+    
+        var popup_2e4c7f10f2361bbfc7eef150c1e7091a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_6beb0f5939f6b2e063fadf2091e3a84e = $(`<div id="html_6beb0f5939f6b2e063fadf2091e3a84e" style="width: 100.0%; height: 100.0%;">Varadero, Kuba</div>`)[0];
+                popup_2e4c7f10f2361bbfc7eef150c1e7091a.setContent(html_6beb0f5939f6b2e063fadf2091e3a84e);
+            
+        
+
+        marker_bd8cf22f67ae76bbbdaf54e5f79c1088.bindPopup(popup_2e4c7f10f2361bbfc7eef150c1e7091a)
+        ;
+
+        
+    
+    
+            var marker_f455e4b216d75af3f69efba8b425769f = L.marker(
+                [18.4716, -77.9188],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_59cfcd6ec22091d9447b029644fed528 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_f455e4b216d75af3f69efba8b425769f.setIcon(icon_59cfcd6ec22091d9447b029644fed528);
+        
+    
+        var popup_475eae5cf5e7b3b1846244d780cd4fbb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d9b28f85c69ef8c40553993ccb839d39 = $(`<div id="html_d9b28f85c69ef8c40553993ccb839d39" style="width: 100.0%; height: 100.0%;">Montego Bay, Jamajka</div>`)[0];
+                popup_475eae5cf5e7b3b1846244d780cd4fbb.setContent(html_d9b28f85c69ef8c40553993ccb839d39);
+            
+        
+
+        marker_f455e4b216d75af3f69efba8b425769f.bindPopup(popup_475eae5cf5e7b3b1846244d780cd4fbb)
+        ;
+
+        
+    
+    
+            var marker_29c810353819c4a8ba729b8b17b5390b = L.marker(
+                [18.2724, -78.3538],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_6fa915a8f4e7bcdf5db276d1c08b6eaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_29c810353819c4a8ba729b8b17b5390b.setIcon(icon_6fa915a8f4e7bcdf5db276d1c08b6eaf);
+        
+    
+        var popup_fc10d36734f5bbdec60d4488ecd6e21e = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c730bd2b687c12a818d940f0d981d042 = $(`<div id="html_c730bd2b687c12a818d940f0d981d042" style="width: 100.0%; height: 100.0%;">Negril, Jamajka</div>`)[0];
+                popup_fc10d36734f5bbdec60d4488ecd6e21e.setContent(html_c730bd2b687c12a818d940f0d981d042);
+            
+        
+
+        marker_29c810353819c4a8ba729b8b17b5390b.bindPopup(popup_fc10d36734f5bbdec60d4488ecd6e21e)
+        ;
+
+        
+    
+    
+            var marker_2f1334c66318bfcc8a5958931fffb727 = L.marker(
+                [21.3069, -157.8583],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_c2cbb1f1a80a76b691d9a9d182dbf911 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_2f1334c66318bfcc8a5958931fffb727.setIcon(icon_c2cbb1f1a80a76b691d9a9d182dbf911);
+        
+    
+        var popup_143254f412baa4801b92008bdb7405e2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c5c9920ac02ecfd9303866e8f78ed68c = $(`<div id="html_c5c9920ac02ecfd9303866e8f78ed68c" style="width: 100.0%; height: 100.0%;">Honolulu, Hawaje, USA</div>`)[0];
+                popup_143254f412baa4801b92008bdb7405e2.setContent(html_c5c9920ac02ecfd9303866e8f78ed68c);
+            
+        
+
+        marker_2f1334c66318bfcc8a5958931fffb727.bindPopup(popup_143254f412baa4801b92008bdb7405e2)
+        ;
+
+        
+    
+    
+            var marker_a81fbe98e16d1d26534792774a9e63d5 = L.marker(
+                [20.7984, -156.3319],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_c64c6711771a8e2092b8759008f50af3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_a81fbe98e16d1d26534792774a9e63d5.setIcon(icon_c64c6711771a8e2092b8759008f50af3);
+        
+    
+        var popup_cc852c4445fc351d097d16e0785730ba = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_de8248e6f4bfd24904519cf44e7ce7bd = $(`<div id="html_de8248e6f4bfd24904519cf44e7ce7bd" style="width: 100.0%; height: 100.0%;">Maui, Hawaje, USA</div>`)[0];
+                popup_cc852c4445fc351d097d16e0785730ba.setContent(html_de8248e6f4bfd24904519cf44e7ce7bd);
+            
+        
+
+        marker_a81fbe98e16d1d26534792774a9e63d5.bindPopup(popup_cc852c4445fc351d097d16e0785730ba)
+        ;
+
+        
+    
+    
+            var marker_414ce7a7cda84b2dc32c2bde4bcdb3fa = L.marker(
+                [9.73, 118.7353],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_ee2ed4b252d2426721f004c8f103dbaf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_414ce7a7cda84b2dc32c2bde4bcdb3fa.setIcon(icon_ee2ed4b252d2426721f004c8f103dbaf);
+        
+    
+        var popup_e5a834c461223d469087b89c5b3bb974 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_774b922f52ecda11a186bf13fcda7017 = $(`<div id="html_774b922f52ecda11a186bf13fcda7017" style="width: 100.0%; height: 100.0%;">Puerto Princesa, Palawan, Filipiny</div>`)[0];
+                popup_e5a834c461223d469087b89c5b3bb974.setContent(html_774b922f52ecda11a186bf13fcda7017);
+            
+        
+
+        marker_414ce7a7cda84b2dc32c2bde4bcdb3fa.bindPopup(popup_e5a834c461223d469087b89c5b3bb974)
+        ;
+
+        
+    
+    
+            var marker_1db1ce4bd859e0194ae6c419a5e76a33 = L.marker(
+                [11.9674, 121.925],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_4ac1cad2b09faaa33815a31021956c3f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "green", "prefix": "glyphicon"}
+            );
+            marker_1db1ce4bd859e0194ae6c419a5e76a33.setIcon(icon_4ac1cad2b09faaa33815a31021956c3f);
+        
+    
+        var popup_2d7a6e10413fc28c0b980f1701450c38 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9fe8399fa82fa0f5f8408ddb7deda36c = $(`<div id="html_9fe8399fa82fa0f5f8408ddb7deda36c" style="width: 100.0%; height: 100.0%;">Boracay, Filipiny</div>`)[0];
+                popup_2d7a6e10413fc28c0b980f1701450c38.setContent(html_9fe8399fa82fa0f5f8408ddb7deda36c);
+            
+        
+
+        marker_1db1ce4bd859e0194ae6c419a5e76a33.bindPopup(popup_2d7a6e10413fc28c0b980f1701450c38)
+        ;
+
+        
+    
+    
+            var marker_31ec563fbf16c5400482703a8cd480e0 = L.marker(
+                [-20.0174, 57.5733],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_b15c6a954540f33754c5c40130823c46 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_31ec563fbf16c5400482703a8cd480e0.setIcon(icon_b15c6a954540f33754c5c40130823c46);
+        
+    
+        var popup_4e646ab8cd7f057f65394e4deeebfb82 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_3f848c9c627ddcd6ca95e56de6dd8f27 = $(`<div id="html_3f848c9c627ddcd6ca95e56de6dd8f27" style="width: 100.0%; height: 100.0%;">Grand Baie, Mauritius</div>`)[0];
+                popup_4e646ab8cd7f057f65394e4deeebfb82.setContent(html_3f848c9c627ddcd6ca95e56de6dd8f27);
+            
+        
+
+        marker_31ec563fbf16c5400482703a8cd480e0.bindPopup(popup_4e646ab8cd7f057f65394e4deeebfb82)
+        ;
+
+        
+    
+    
+            var marker_b48c10624f25bf6170768035b8ab6c31 = L.marker(
+                [-20.2746, 57.3639],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_a77fa541e0e971842d8ece64ec679558 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b48c10624f25bf6170768035b8ab6c31.setIcon(icon_a77fa541e0e971842d8ece64ec679558);
+        
+    
+        var popup_0aa0b22c4831de08769a613ef5b85216 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f4e471284811e7fa1e8e48232d14a574 = $(`<div id="html_f4e471284811e7fa1e8e48232d14a574" style="width: 100.0%; height: 100.0%;">Flic en Flac, Mauritius</div>`)[0];
+                popup_0aa0b22c4831de08769a613ef5b85216.setContent(html_f4e471284811e7fa1e8e48232d14a574);
+            
+        
+
+        marker_b48c10624f25bf6170768035b8ab6c31.bindPopup(popup_0aa0b22c4831de08769a613ef5b85216)
+        ;
+
+        
+    
+    
+            var marker_ba05e60b9dd904472d8ca50fe47419c3 = L.marker(
+                [-4.6796, 55.492],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_e4251f6d93330fea8ed6e6e99352eff3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ba05e60b9dd904472d8ca50fe47419c3.setIcon(icon_e4251f6d93330fea8ed6e6e99352eff3);
+        
+    
+        var popup_3ff525ef69b14ed95254c6ae8637278b = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4811da1830ef8b729576521264081522 = $(`<div id="html_4811da1830ef8b729576521264081522" style="width: 100.0%; height: 100.0%;">Mahe, Seychele</div>`)[0];
+                popup_3ff525ef69b14ed95254c6ae8637278b.setContent(html_4811da1830ef8b729576521264081522);
+            
+        
+
+        marker_ba05e60b9dd904472d8ca50fe47419c3.bindPopup(popup_3ff525ef69b14ed95254c6ae8637278b)
+        ;
+
+        
+    
+    
+            var marker_46f45809ef56a229d9a3db9c80b12d7d = L.marker(
+                [-4.3173, 55.7271],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_1d530875cc0f876b18a632c931f1b3bc = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_46f45809ef56a229d9a3db9c80b12d7d.setIcon(icon_1d530875cc0f876b18a632c931f1b3bc);
+        
+    
+        var popup_5eb35cd4b5a01f94db5cc770fe418a74 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_77b4b46eaea6353aeecaf3e019b56c86 = $(`<div id="html_77b4b46eaea6353aeecaf3e019b56c86" style="width: 100.0%; height: 100.0%;">Praslin, Seychele</div>`)[0];
+                popup_5eb35cd4b5a01f94db5cc770fe418a74.setContent(html_77b4b46eaea6353aeecaf3e019b56c86);
+            
+        
+
+        marker_46f45809ef56a229d9a3db9c80b12d7d.bindPopup(popup_5eb35cd4b5a01f94db5cc770fe418a74)
+        ;
+
+        
+    
+    
+            var marker_3d294cbb6d763231665094a9bcf4caff = L.marker(
+                [-8.519, 115.263],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_a4f7c46e952c554b5ad7cd844458d11c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3d294cbb6d763231665094a9bcf4caff.setIcon(icon_a4f7c46e952c554b5ad7cd844458d11c);
+        
+    
+        var popup_4ec604334f77f3f9523ecf7a41649fdb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_61b2ae8773ffc35abff23ce0fdad8e4d = $(`<div id="html_61b2ae8773ffc35abff23ce0fdad8e4d" style="width: 100.0%; height: 100.0%;">Ubud, Bali, Indonezja</div>`)[0];
+                popup_4ec604334f77f3f9523ecf7a41649fdb.setContent(html_61b2ae8773ffc35abff23ce0fdad8e4d);
+            
+        
+
+        marker_3d294cbb6d763231665094a9bcf4caff.bindPopup(popup_4ec604334f77f3f9523ecf7a41649fdb)
+        ;
+
+        
+    
+    
+            var marker_f4e32b8bd00378ca4716f7ac5f1089d8 = L.marker(
+                [-8.6902, 115.1628],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_760b21586d94d2aaca26a178b1af4fb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f4e32b8bd00378ca4716f7ac5f1089d8.setIcon(icon_760b21586d94d2aaca26a178b1af4fb8);
+        
+    
+        var popup_99d4714eadf3d19bd2e2c73884b0d670 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c80455b6c4861b07b3a598b553718afc = $(`<div id="html_c80455b6c4861b07b3a598b553718afc" style="width: 100.0%; height: 100.0%;">Seminyak, Bali, Indonezja</div>`)[0];
+                popup_99d4714eadf3d19bd2e2c73884b0d670.setContent(html_c80455b6c4861b07b3a598b553718afc);
+            
+        
+
+        marker_f4e32b8bd00378ca4716f7ac5f1089d8.bindPopup(popup_99d4714eadf3d19bd2e2c73884b0d670)
+        ;
+
+        
+    
+    
+            var marker_f837257a18612396d2efbe643f718a0d = L.marker(
+                [18.5601, -68.3725],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_e5a175e14e3c146146c7f66ccc933c22 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f837257a18612396d2efbe643f718a0d.setIcon(icon_e5a175e14e3c146146c7f66ccc933c22);
+        
+    
+        var popup_d43acc5bbfcaa90ca00f21950932df61 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_39e04834d3ce1edfd197b23dae0399f3 = $(`<div id="html_39e04834d3ce1edfd197b23dae0399f3" style="width: 100.0%; height: 100.0%;">Punta Cana, Dominikana</div>`)[0];
+                popup_d43acc5bbfcaa90ca00f21950932df61.setContent(html_39e04834d3ce1edfd197b23dae0399f3);
+            
+        
+
+        marker_f837257a18612396d2efbe643f718a0d.bindPopup(popup_d43acc5bbfcaa90ca00f21950932df61)
+        ;
+
+        
+    
+    
+            var marker_90d8199314a1b4874dee7ec3155fb183 = L.marker(
+                [18.4861, -69.9312],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_5de7d0fd6eaeacae5a67699778844b1d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_90d8199314a1b4874dee7ec3155fb183.setIcon(icon_5de7d0fd6eaeacae5a67699778844b1d);
+        
+    
+        var popup_9b9f46e1d4fe74578ca9e5e36e37e682 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8793919f3ab56d59ed3a40a04ba74bec = $(`<div id="html_8793919f3ab56d59ed3a40a04ba74bec" style="width: 100.0%; height: 100.0%;">Santo Domingo, Dominikana</div>`)[0];
+                popup_9b9f46e1d4fe74578ca9e5e36e37e682.setContent(html_8793919f3ab56d59ed3a40a04ba74bec);
+            
+        
+
+        marker_90d8199314a1b4874dee7ec3155fb183.bindPopup(popup_9b9f46e1d4fe74578ca9e5e36e37e682)
+        ;
+
+        
+    
+    
+            var marker_b9af5cc60a9a3fd9798c5725d779f517 = L.marker(
+                [-4.0435, 39.6682],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_f0f2f291f0f88c16b66fe5686493f6f5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b9af5cc60a9a3fd9798c5725d779f517.setIcon(icon_f0f2f291f0f88c16b66fe5686493f6f5);
+        
+    
+        var popup_311fa66c789038262766ec23f80579bb = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_afe0883ecaaf63ee1f2025dd3a4bad0e = $(`<div id="html_afe0883ecaaf63ee1f2025dd3a4bad0e" style="width: 100.0%; height: 100.0%;">Mombasa, Kenia</div>`)[0];
+                popup_311fa66c789038262766ec23f80579bb.setContent(html_afe0883ecaaf63ee1f2025dd3a4bad0e);
+            
+        
+
+        marker_b9af5cc60a9a3fd9798c5725d779f517.bindPopup(popup_311fa66c789038262766ec23f80579bb)
+        ;
+
+        
+    
+    
+            var marker_7c0ea2161010656776c3b6e1c5228d20 = L.marker(
+                [-4.3171, 39.5778],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_2c8fbfcd53441d36ba408d6e7882a4f2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_7c0ea2161010656776c3b6e1c5228d20.setIcon(icon_2c8fbfcd53441d36ba408d6e7882a4f2);
+        
+    
+        var popup_c764bb2e75eb1a64e94db7c77182de72 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_d1c778aadcbb37e7f870c8d6eff771ab = $(`<div id="html_d1c778aadcbb37e7f870c8d6eff771ab" style="width: 100.0%; height: 100.0%;">Diani Beach, Kenia</div>`)[0];
+                popup_c764bb2e75eb1a64e94db7c77182de72.setContent(html_d1c778aadcbb37e7f870c8d6eff771ab);
+            
+        
+
+        marker_7c0ea2161010656776c3b6e1c5228d20.bindPopup(popup_c764bb2e75eb1a64e94db7c77182de72)
+        ;
+
+        
+    
+    
+            var marker_30b9d7ee69850c0cd81087ca851999a4 = L.marker(
+                [-17.7766, 177.435],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_8b2a8e5f7f778778133c28a52ee5dbfa = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_30b9d7ee69850c0cd81087ca851999a4.setIcon(icon_8b2a8e5f7f778778133c28a52ee5dbfa);
+        
+    
+        var popup_4c50b3bd20612217a7dc0d4e66b61509 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_73217ec569224817656f3463339b1821 = $(`<div id="html_73217ec569224817656f3463339b1821" style="width: 100.0%; height: 100.0%;">Nadi, Fidżi</div>`)[0];
+                popup_4c50b3bd20612217a7dc0d4e66b61509.setContent(html_73217ec569224817656f3463339b1821);
+            
+        
+
+        marker_30b9d7ee69850c0cd81087ca851999a4.bindPopup(popup_4c50b3bd20612217a7dc0d4e66b61509)
+        ;
+
+        
+    
+    
+            var marker_334a7af8477fb888373db75d2fa1a131 = L.marker(
+                [-17.7697, 177.379],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_3f2173c4c97100c8062b15d125fb9e23 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_334a7af8477fb888373db75d2fa1a131.setIcon(icon_3f2173c4c97100c8062b15d125fb9e23);
+        
+    
+        var popup_d9f7d2df197623003e6165f6386d12c2 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_20964d3c328850f7ad2c9a819dea3181 = $(`<div id="html_20964d3c328850f7ad2c9a819dea3181" style="width: 100.0%; height: 100.0%;">Denarau Island, Fidżi</div>`)[0];
+                popup_d9f7d2df197623003e6165f6386d12c2.setContent(html_20964d3c328850f7ad2c9a819dea3181);
+            
+        
+
+        marker_334a7af8477fb888373db75d2fa1a131.bindPopup(popup_d9f7d2df197623003e6165f6386d12c2)
+        ;
+
+        
+    
+    
+            var marker_da0b11af4c32c435d2ce54125ec4443c = L.marker(
+                [-13.3203, 48.2338],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_3e6ef43f55be3bd9ed97a7a2e6f324c9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da0b11af4c32c435d2ce54125ec4443c.setIcon(icon_3e6ef43f55be3bd9ed97a7a2e6f324c9);
+        
+    
+        var popup_4d905db2d2f51e7019059d52ce9102a4 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_ba3d5ddfdb44b18a65675a803f286693 = $(`<div id="html_ba3d5ddfdb44b18a65675a803f286693" style="width: 100.0%; height: 100.0%;">Nosy Be, Madagaskar</div>`)[0];
+                popup_4d905db2d2f51e7019059d52ce9102a4.setContent(html_ba3d5ddfdb44b18a65675a803f286693);
+            
+        
+
+        marker_da0b11af4c32c435d2ce54125ec4443c.bindPopup(popup_4d905db2d2f51e7019059d52ce9102a4)
+        ;
+
+        
+    
+    
+            var marker_ea706fa585fdf137c7cb77604ac2ed88 = L.marker(
+                [-18.8792, 47.5079],
+                {}
+            ).addTo(map_a68399962e19bc3b9ba59e89d4918c77);
+        
+    
+            var icon_6f9ddd96ce2b56b6f005d116ea11686b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ea706fa585fdf137c7cb77604ac2ed88.setIcon(icon_6f9ddd96ce2b56b6f005d116ea11686b);
+        
+    
+        var popup_6ef5fa4b6039a715c773ce475a8434b6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_daaba693cc97ce519ab093f13de15fa1 = $(`<div id="html_daaba693cc97ce519ab093f13de15fa1" style="width: 100.0%; height: 100.0%;">Antananarivo, Madagaskar</div>`)[0];
+                popup_6ef5fa4b6039a715c773ce475a8434b6.setContent(html_daaba693cc97ce519ab093f13de15fa1);
+            
+        
+
+        marker_ea706fa585fdf137c7cb77604ac2ed88.bindPopup(popup_6ef5fa4b6039a715c773ce475a8434b6)
+        ;
+
+        
+    
+</script>
+</html>
